@@ -1,0 +1,62 @@
+/* Establece valores predeterminados para todas las etiquetas eliminando márgenes y rellenos */
+*{
+  margin:0px; /* Elimina el margen exterior de todos los elementos */
+  padding:0px;  /* Elimina el espacio interno de todos los elementos */
+}
+
+/* ---------------------------------------------------------------Reglas para las etiquetas */
+
+/* Define la fuente de todo el contenido dentro del <body> */
+body {
+    font-family: "Raleway", "Open Sans", sans-serif; /* Usa estas fuentes si están disponibles */
+}
+
+/* Aplica estilos a los títulos h1, h2, h3, etc. */
+h1, h2, h3, h4, h5, h6 {
+    font-family: Arial, Helvetica, sans-serif; /* Cambia la fuente de los títulos */
+    font-weight: bold; /* Hace que los títulos sean más gruesos */
+    line-height: 140%; /* Ajusta la altura de las líneas para mejorar la legibilidad */
+}
+
+/* Hace que solo los títulos h1 sean más delgados */
+h1{
+    font-weight: lighter;
+}
+
+/* ---------------------------------------------------------------Reglas para las divisiones */
+
+/* IMPORTANTE: Diferencia entre id (#) y clase (.)
+   - id (#contenedor): Se usa para elementos únicos en la página.
+   - clase (.importante): Se usa para varios elementos que comparten el mismo estilo. */
+
+/* Estilos del contenedor principal */
+#contenedor{
+    width:80%; /* El contenedor ocupa el 80% del ancho de la pantalla */
+    padding: 10%; /* Agrega espacio interno alrededor del contenido */
+    background-color: blanchedalmond; /* Cambia el fondo del contenedor */
+}
+
+/* Configura los artículos en formato de cuadrícula */
+#articulos {
+    display:grid; /* Usa un diseño basado en cuadrículas */
+    grid-template-columns: 1fr 1fr 1fr; /* Divide en 3 columnas de igual tamaño */
+    gap: 10px;  /* Espaciado entre columnas */
+}
+
+/* Aplica estilos a los artículos dentro del contenedor */
+#articulos div{
+    border: dotted 1px red; /* Borde punteado en color rojo */
+    padding:2%; /* Espacio interno dentro de cada artículo */
+    border-radius:10px; /* Redondea las esquinas de cada artículo */
+}
+
+/* Estilos específicos para los elementos con la clase "impar" dentro del listado */
+#listado .impar{
+    color: red; /* Cambia el color del texto a rojo */
+}
+
+/* Estilos para los elementos marcados como "importante" */
+.importante{
+    background-color: yellow; /* Fondo amarillo para destacar */
+}
+
