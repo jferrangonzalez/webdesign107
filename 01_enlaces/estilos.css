@@ -1,0 +1,54 @@
+/* 
+ * Selector universal (*) - Aplica a TODOS los elementos HTML
+ * Establece un "reset" básico eliminando márgenes y rellenos predeterminados
+ * Esto ayuda a tener un diseño más consistente entre navegadores
+ */
+ *{
+    padding:0px;    /* Elimina el espacio interno (relleno) de todos los elementos */
+    margin:0px;     /* Elimina el espacio externo (márgenes) de todos los elementos */
+}
+
+
+/* 
+ * Selector descendente - Selecciona todos los enlaces (<a>) dentro de elementos con clase "nav"
+ * Estiliza los enlaces de la barra de navegación principal
+ */
+.nav a{
+    font-size:30px;      /* Establece un tamaño de letra grande (30 píxeles) */
+    margin-left:10px;    /* Añade espacio de 10px a la izquierda de cada enlace para separarlos */
+    color:red;           /* Establece el color del texto de los enlaces en rojo */
+}
+
+/* 
+ * Selector descendente - Selecciona todos los elementos de lista (<li>) dentro de elementos con clase "navprincipal"
+ * Da formato a los elementos de la lista de navegación para que parezcan botones
+ */
+.navprincipal li{
+    list-style-type: none;    /* Elimina los marcadores de lista (puntos o números) */
+    width:200px;              /* Establece un ancho fijo de 200px para cada elemento */
+    display:inline;           /* Hace que los elementos se muestren en línea (uno al lado del otro) */
+    border: solid 1px red;    /* Añade un borde rojo sólido de 1px de grosor */
+    padding: 5px 10px;        /* Añade espacio interno: 5px arriba/abajo y 10px izquierda/derecha */
+    background:lightsalmon;   /* Establece un color de fondo salmón claro */
+    border-radius:4px;        /* Redondea las esquinas del borde con un radio de 4px */
+}
+
+
+/* 
+ * Selector de pseudo-clase :hover - Se activa cuando el cursor pasa sobre los elementos
+ * Crea un efecto interactivo al pasar el ratón sobre los elementos de la lista
+ */
+.navprincipal li:hover{
+    border-radius:9px;       /* Aumenta el redondeo de las esquinas a 9px */
+    background: darkgreen;   /* Cambia el color de fondo a verde oscuro */
+    transition: 1s;          /* Añade una transición suave de 1 segundo para los cambios */
+}
+
+/* 
+ * Selector descendente - Selecciona todos los enlaces dentro de los elementos de lista de "navprincipal"
+ * Estiliza específicamente el texto de los enlaces dentro de los botones de navegación
+ */
+.navprincipal li a{
+    color:white;             /* Establece el color del texto en blanco */
+    text-decoration:none;    /* Elimina el subrayado predeterminado de los enlaces */
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!-- Declaración del tipo de documento HTML5 -->
+<html lang="es">
+<!-- Etiqueta raíz del documento con atributo de idioma español -->
+<head>
+    <!-- Sección de metadatos y recursos del documento -->
+    <meta charset="UTF-8">
+    <!-- Define la codificación de caracteres como UTF-8 para soportar caracteres especiales -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Configuración para diseño responsive, ajusta el ancho según el dispositivo -->
+    <title>Enlaces html</title>
+    <!-- Título de la página que aparece en la pestaña del navegador -->
+    <link rel="stylesheet" href="estilos.css">
+    <!-- Enlace a hoja de estilos externa -->
+</head>
+<body>
+    <!-- Contenido visible de la página -->
+
+    <!-- TIPO 1: Enlace a una sección específica de otra página -->
+    <!-- Este enlace dirige a una sección con id="becas" dentro del archivo instrucciones.html -->
+    <a href="instrucciones.html#becas">CONDICIONES DE BECAS</a>
+
+    <div id="contenedor">
+        <!-- Contenedor principal de la página -->
+        <div class="nav">
+            <!-- TIPO 2: Enlace a sitio web externo -->
+            <!-- El atributo target="_blank" hace que el enlace se abra en una nueva pestaña -->
+            <a href="https://www.google.es/" target="_blank">Ir a Google</a>
+        </div>
+        <div class="encabezados">
+            <h1>Página de inicio</h1>
+        </div>
+
+        <!-- TIPO 3: Enlaces a páginas internas del mismo sitio web -->
+        <!-- Estos enlaces navegan a otras páginas del mismo proyecto -->
+        <div class="nav">
+            <a href="index.html">INICIO</a>
+            <a href="servicios.html">SERVICIOS</a>
+            <a href="contacto.html">CONTACTO</a>
+        </div>
+
+        <!-- TIPO 4: Enlace a una sección específica dentro de la misma página -->
+        <!-- El símbolo # seguido de un id dirige a un elemento con ese id en la misma página -->
+        <a href="#zonacompras">Ir a comprar</a>
+
+
+        <!-- TIPO 5: Enlaces en una lista no ordenada -->
+        <!-- Forma estructurada de presentar enlaces usando listas HTML -->
+        <div class="navlista">
+            <ul class="navprincipal">
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="servicios.html">SERVICIOS</a></li>
+                <li><a href="contacto.html">CONTACTO</a></li>
+            </ul>
+        </div>
+        <div class="articulo">
+            <!-- Contenido de texto Lorem ipsum (texto de relleno) -->
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus unde repudiandae dolor. Nisi atque modi recusandae facere excepturi nam, itaque obcaecati aliquid eveniet pariatur eum. Incidunt fugit sapiente eius cupiditate.
+            <!-- Más texto Lorem ipsum... -->
+        </div>
+        <!-- TIPO 6: Destino de un enlace interno -->
+        <!-- Este div con id="zonacompras" es el destino del enlace "#zonacompras" anterior -->
+        <div id="zonacompras">
+            <h2>Cómprame ya</h2>
+        </div>
+    </div>
+
+    <!-- TIPO 7: Enlace para volver al inicio de la página -->
+    <!-- Enlaza al elemento con id="contenedor", funcionando como "volver arriba" -->
+    <a href="#contenedor">Ir arriba</a>
+    
+</body>
+</html>
