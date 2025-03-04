@@ -83,7 +83,7 @@ Los elementos de lista pueden ser estilizados para parecer botones:
 .navprincipal li {
     list-style-type: none;    /* Elimina los marcadores de lista */
     width: 200px;             /* Ancho fijo */
-    display: inline;          /* Elementos en línea */
+    display:inline-block;          /* Elementos en línea */
     border: solid 1px red;    /* Borde rojo */
     padding: 5px 10px;        /* Espaciado interno */
     background: lightsalmon;  /* Color de fondo */
