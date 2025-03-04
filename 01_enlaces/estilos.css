@@ -26,7 +26,7 @@
 .navprincipal li{
     list-style-type: none;    /* Elimina los marcadores de lista (puntos o números) */
     width:200px;              /* Establece un ancho fijo de 200px para cada elemento */
-    display:inline;           /* Hace que los elementos se muestren en línea (uno al lado del otro) */
+    display:inline-block;           /* Hace que los elementos se muestren en línea (uno al lado del otro) */
     border: solid 1px red;    /* Añade un borde rojo sólido de 1px de grosor */
     padding: 5px 10px;        /* Añade espacio interno: 5px arriba/abajo y 10px izquierda/derecha */
     background:lightsalmon;   /* Establece un color de fondo salmón claro */
