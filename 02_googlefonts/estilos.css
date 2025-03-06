@@ -1,0 +1,62 @@
+/* 
+ * Selector universal que aplica estilos a TODOS los elementos HTML 
+ * Elimina el padding y margin predeterminados de todos los elementos
+ */
+ * {
+    padding: 0px;
+    margin: 0px;
+}
+
+/* 
+ * Estilos para el elemento body (cuerpo principal del documento)
+ * Configura la tipografía principal del sitio usando Nunito Sans de Google Fonts
+ */
+body{
+    font-family: "Nunito Sans", sans-serif; /* Fuente principal con fallback a sans-serif genérica */
+    font-optical-sizing: auto; /* Ajusta automáticamente el diseño óptico según el tamaño */
+    font-weight: 400; /* Peso de fuente regular/normal */
+    font-style: normal; /* Estilo de fuente normal (no itálica) */
+    font-variation-settings:
+      "wdth" 100, /* Configuración de ancho de la fuente variable */
+      "YTLC" 500; /* Configuración personalizada de la fuente variable */
+}
+
+/* 
+ * Estilos compartidos para todos los encabezados h1, h2 y h3
+ * Usa la fuente decorativa Yellowtail para los títulos
+ */
+h1, h2, h3 {
+    font-family: "Yellowtail", cursive; /* Fuente decorativa con fallback a cursive genérica */
+    font-weight: 400; /* Peso de fuente regular */
+    font-style: normal; /* Estilo de fuente normal */
+    color: #ff0000; /* Color rojo para todos los encabezados */
+}
+
+/* 
+ * Estilos para el elemento con clase "text-hero"
+ * Define el fondo y altura de la sección hero
+ */
+.text-hero{
+    background-color: cornsilk; /* Color de fondo amarillo pálido */
+    height: 100vh; /* Altura igual al 100% del viewport (pantalla completa) */
+}
+
+/* 
+ * Estilos adicionales para el elemento con clase "text-hero"
+ * Configura el layout usando CSS Grid
+ * Nota: Este selector está duplicado, lo que puede causar problemas
+ */
+.text-hero{
+    display: grid; /* Usa CSS Grid para el layout */
+    /* justify-items: ; Centrado horizontal - comentado/desactivado */
+    align-items: center; /*centrado vertical */
+}
+
+/* 
+ * Estilos para el elemento con clase "encabezado"
+ * Configura la alineación del texto y el fondo
+ */
+.encabezado{
+    text-align: center; /* Centra el texto horizontalmente */
+    background-color: rgba(24, 197, 240, 0.137); /* Color de fondo azul claro semi-transparente */
+}
