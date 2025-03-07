@@ -1,0 +1,57 @@
+/* Reset global - elimina márgenes y rellenos predeterminados de todos los elementos */
+*{
+    margin:0px;
+    padding:0px;
+}
+
+/* Estilos para el elemento body */
+body{
+    /* Establece una imagen de fondo desde la carpeta imagen */
+    background-image: url("../imagen/imagenfondo.jpg");
+    /* Evita que la imagen se repita */
+    background-repeat:no-repeat;
+    /* Posiciona la imagen en la parte superior central */
+    background-position: top center;
+    /* Fija la imagen de fondo al viewport (no se desplaza con el scroll) */
+    background-attachment:fixed;
+}
+
+/* Contenedor principal */
+.container{
+    /* Establece márgenes del 2% arriba/abajo y 10% izquierda/derecha */
+    margin:2% 10%;
+}
+
+/* Sección de cabecera */
+.header{
+    /* Borde rojo sólido de 1px */
+    border: solid 1px red;
+    /* Altura del 50% del viewport */
+    height:50vh;
+    /* Múltiples imágenes de fondo usando la misma imagen 'volador.png' */
+    background-image: url("../imagen/volador.png"), url("../imagen/volador.png");
+    /* Primera imagen se repite horizontalmente, segunda verticalmente */
+    background-repeat:repeat-x, repeat-y;
+    /* Primera imagen en la parte superior, segunda en la izquierda */
+    background-position: top, left;
+}
+
+/* Sección de artículos */
+.articulos{
+    /* Espacio superior de 40px */
+    margin-top:40px;
+    /* Usa CSS Grid para el layout */
+    display:grid;
+    /* Crea tres columnas de igual tamaño */
+    grid-template-columns: 1fr 1fr 1fr;
+    /* Espacio de 10px entre elementos del grid */
+    gap:10px;
+}
+
+/* Elementos ficha dentro de artículos */
+.articulos .ficha {
+    /* Borde punteado verde de 2px */
+    border:dotted 2px green;
+    /* Altura del 25% del viewport */
+    height:25vh;
+}
