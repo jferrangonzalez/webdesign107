@@ -1,0 +1,147 @@
+/* Reseteo global de márgenes y padding, con un fondo semi-transparente */
+* {
+    margin: 0px;
+    padding: 0px;
+    background-color: rgba(5,5,5,0.10);
+}
+
+/* Clase para hacer imágenes responsivas manteniendo su proporción */
+.imgfluid {
+    width: 100%;
+    height: auto;
+}
+
+/* Clase para agregar un borde blanco de 2px */
+.borderwhite {
+    border: solid 2px white;
+}
+
+/* Estructura del header en grid con dos columnas: logo y navegación */
+header {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+}
+
+/* Estilo de la navegación principal, distribuida en 4 columnas iguales */
+header nav .navprincipal {
+    text-align: right;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+/* Elimina los puntos de la lista de navegación y centra el texto */
+header nav .navprincipal li {
+    list-style-type: none;
+    text-align: center;
+}
+
+/* Estilo de los enlaces de navegación */
+header nav .navprincipal li a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/* Contenedor principal con ancho máximo y centrado */
+.container {
+    width: 90%;
+    margin: auto;
+    max-width: 1200px;
+}
+
+/* División del contenido principal en dos columnas */
+.container .containt {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+/* Sección hero con imagen de fondo */
+.container .containt .text-hero {
+    width: 100%;
+    height: 90vh;
+    background-image: url("images/fondo.png");
+    background-size: cover;
+    background-position: right center;
+}
+
+/* Tamaño del título principal */
+.container .containt .text-hero h1 {
+    font-size: 90px;
+}
+
+/* Footer dividido en dos columnas iguales */
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/* Media query para pantallas de hasta 740px */
+@media screen and (max-width:740px) {
+    /* Cambio a una columna en el header */
+    header {
+        grid-template-columns: 1fr;
+    }
+
+    /* Centrado del logo */
+    header .logo {
+        text-align: center;
+    }
+
+    /* Navegación en dos columnas */
+    header nav .navprincipal {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* Contenido principal en una columna */
+    .container .containt {
+        grid-template-columns: 1fr;
+    }
+
+    /* Reducción del tamaño del título */
+    .container .containt .text-hero h1 {
+        font-size: 50px;
+    }
+
+    /* Cambio de imagen de fondo y posición */
+    .container .containt .text-hero {
+        background-image: url("images/fondo2.png");
+        background-position: left center;
+    }
+
+    /* Sidebar en dos columnas */
+    .container .containt aside {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Media query para pantallas de hasta 450px */
+@media screen and (max-width:450px) {
+    /* Contenedor a ancho completo */
+    .container {
+        width: 100%;
+    }
+
+    /* Reducción adicional del título */
+    .container .containt .text-hero h1 {
+        font-size: 45px;
+    }
+
+    /* Navegación en una columna */
+    header nav .navprincipal {
+        grid-template-columns: 1fr;
+    }
+
+    /* Cambio de imagen de fondo para móviles */
+    .container .containt .text-hero {
+        background-image: url("images/fondo3.png");
+        background-position: left center;
+    }
+
+    /* Sidebar en una columna */
+    .container .containt aside {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
