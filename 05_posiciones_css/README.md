@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamiento CSS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        .container {
+            border: 2px solid #333;
+            padding: 20px;
+            margin: 20px;
+            height: 400px;
+            position: relative;
+            background-color: #f0f0f0;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+        }
+
+        /* Caja con posición relativa */
+        .relative-box {
+            background-color: #ff6b6b;
+            position: relative;
+            top: 20px;
+            left: 20px;
+        }
+
+        /* Caja con posición absoluta */
+        .absolute-box {
+            background-color: #4ecdc4;
+            position: absolute;
+            top: 50px;
+            right: 50px;
+        }
+
+        /* Caja con posición sticky */
+        .sticky-box {
+            background-color: #45b7d1;
+            position: sticky;
+            top: 0;
+        }
+
+        .explanation {
+            background-color: #fff;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tipos de Posicionamiento en CSS</h1>
+
+    <div class="explanation">
+        <h2>Posición Relativa</h2>
+        <p>El elemento se posiciona relativamente a su posición normal. Se mueve respecto a donde debería estar originalmente.</p>
+    </div>
+
+    <div class="container">
+        <div class="box relative-box">Relativo</div>
+    </div>
+
+    <div class="explanation">
+        <h2>Posición Absoluta</h2>
+        <p>El elemento se posiciona de forma absoluta respecto a su contenedor más cercano con posición relativa.</p>
+    </div>
+
+    <div class="container">
+        <div class="box absolute-box">Absoluto</div>
+    </div>
+
+    <div class="explanation">
+        <h2>Posición Sticky</h2>
+        <p>El elemento se comporta como relativo hasta alcanzar un punto de desplazamiento, luego se "pega" como si fuera fijo.</p>
+    </div>
+
+    <div class="container">
+        <div class="box sticky-box">Sticky</div>
+        <div style="height: 800px;"></div>
+    </div>
+
+    <p style="margin-bottom: 500px;">Desplázate para ver el efecto sticky</p>
+</body>
+</html>
