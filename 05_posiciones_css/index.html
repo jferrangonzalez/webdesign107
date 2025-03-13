@@ -46,6 +46,21 @@
             right: 50px;
         }
 
+        /* Caja con posición fixed */
+        .fixed-box {
+            background-color: #ffd93d;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .fixed-box:hover {
+            transform: scale(1.1);
+        }
+
         /* Caja con posición sticky */
         .sticky-box {
             background-color: #45b7d1;
@@ -88,6 +103,13 @@
     </div>
 
     <div class="explanation">
+        <h2>Posición Fixed</h2>
+        <p>El elemento se mantiene fijo en la pantalla incluso al hacer scroll. Siempre visible en la misma posición.</p>
+    </div>
+
+    <div class="box fixed-box">Fixed</div>
+
+    <div class="explanation">
         <h2>Posición Sticky</h2>
         <p>El elemento se comporta como relativo hasta alcanzar un punto de desplazamiento, luego se "pega" como si fuera fijo.</p>
     </div>
@@ -97,6 +119,6 @@
         <div style="height: 800px;"></div>
     </div>
 
-    <p style="margin-bottom: 500px;">Desplázate para ver el efecto sticky</p>
+    <p style="margin-bottom: 500px;">Desplázate para ver los efectos sticky y fixed</p>
 </body>
 </html>
