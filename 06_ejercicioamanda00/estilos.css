@@ -1,0 +1,238 @@
+*{
+    padding:0px;
+    margin:0px;
+}
+
+
+/*-----------------------------------------------Estilos de estructura y diseño-------*/
+
+
+body{
+
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+
+
+}
+
+
+h1, h2, h3,h4{
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.container{
+
+
+}
+
+.container header .banner .text-hero{
+    width:100%;
+    height:70vh;
+    background-image: url("https://picsum.photos/1800/600");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:relative;
+}
+
+.container header .banner .text-hero h1{
+    position:absolute;
+    bottom: 40px;
+    right: 40px;
+    font-size:50px;
+    color:white;
+
+}
+
+.container header nav{
+    padding: 2% 0%;
+}
+
+.container header nav .navprincipal li{
+    list-style-type:none;
+    display:inline-block;
+    text-align:center;
+    width: 24%;
+
+}
+
+.container header nav .navprincipal li a{
+    text-decoration:none;
+    color:rgb(122, 72, 10);
+    font-size:20px;
+    text-transform:uppercase;
+
+
+}
+
+
+.container .content .tagline {
+    background-color:rgb(252, 220, 162);
+    color: rgb(122, 72, 10);
+    text-align:center;
+    padding:10% 5%;
+    font-size:300%;
+}
+
+.container .content .encabezados{
+    margin-top:100px;
+    margin-bottom:30px;
+    text-align:center;
+    margin-bottom: 76px;
+}
+
+.container .content .encabezados h2 {
+    font-size: 47px;
+    border-bottom: solid 1px lightgray;
+    max-width: 800px;
+    margin: auto;
+}
+
+
+.container .content .ficha{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 35px;
+}
+
+.container .content .ficha .texto {
+    padding: 5%;
+    background-image: url("icons/lapiz.png");
+    background-repeat:no-repeat;
+    background-position: right bottom;
+    padding-right:40px;
+    border-right:dotted 1px lightpink;
+}
+
+
+.container .content .ficha .texto h3 {
+    font-size: 30px;
+}
+
+.container .content .ficha .texto p {
+    margin-bottom:20px;
+}
+
+
+.container aside{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top:45px;
+    margin-bottom:45px;
+
+}
+
+.container aside section {
+    padding: 4%;
+}
+
+.container aside section h4{
+    font-size: 20px;
+    border-bottom: solid 1px purple;
+    margin-bottom:20px;
+}
+
+.container aside section p{
+    line-height:18px;
+    margin-bottom:15px;
+}
+.container footer {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: purple;
+    color:white;
+    padding:5%;
+
+}
+
+.container footer #address{
+    position:relative;
+}
+
+.container footer section .direcciones{
+    position:absolute;
+    padding:20px;
+    margin:20px;
+    border: dashed 3px white;
+    right:40px;
+    bottom:40px;
+}
+
+.container footer section .direcciones h3{
+    font-size: 36px;
+
+}
+.container footer section .direcciones li{
+    list-style-type:none;
+    font-size: 24px;
+
+}
+
+.container footer section img{
+    border: solid 4px white;
+}
+
+.container footer section h4{
+    text-align:right;
+    margin-top:15px;
+    font-size:28px;
+}
+
+
+/*-----------------------------------------------------------Reglas de comportamiento--*/
+
+.max1200{
+    width:100%;
+    max-width:1200px;
+    margin:auto;
+}
+
+.imgfluid{
+    width:100%;
+    height:auto;
+}
+
+.leermas{
+    text-decoration: none;
+    font-size:20px;
+    color: darkviolet;
+    font-style: italic;
+}
+
+
+@media screen and (max-width:749px){
+
+    .container .content .ficha{
+        grid-template-columns: 1fr;
+    }
+
+    .container footer {
+        grid-template-columns: 1fr;
+    }
+
+    .container aside{
+        grid-template-columns: 1fr;
+
+}
+
+.container footer #address{
+    position:relative;
+}
+
+.container footer section .direcciones{
+    position:relative;
+
+}
+
+.container footer section .direcciones {
+    right: 0px;
+    bottom: 0px;
+}
+
+
+}
+
